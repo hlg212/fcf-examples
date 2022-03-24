@@ -1,0 +1,17 @@
+hlg:
+  config:
+    ##    uri: ${htcf.config.uri}
+    uri: http://localhost:8181/config/svn
+
+# 监控用的应用信息
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: 例子-增删改查导入导出
+    version: 2.5.0-SNAPSHOT
+    encoding: UTF-8
+    java:
+      version: 1.8.0_144
+    frame:
+      version: ${htcf-frame.version}
