@@ -2,6 +2,11 @@
  基于 [FCF](https://github.com/hlg212/FCF) 框架的例子工程
 
 ## 工程如何启动
+所有的例子工程都是按照微服务的设计，本地不存储配置，默认情况下是需要连接到”配置中心“。
+
+如果还没有部署微服务环境，可以将框架默认配置下载到本地（参考: [不连接配置中心](https://github.com/hlg212/fcf-examples/local) ），然后进行启动;
+
+建议配置都存储到配置中心，否则后期对于配置的管理会比较麻烦；
 
 ## 模块介绍
 - [零代码、增、删、改、查、导入、导出](https://github.com/hlg212/fcf-examples/curdie)
@@ -22,6 +27,7 @@
 - [调用链与业务日志](https://github.com/hlg212/FCP)
 - [数据库版本控制](https://github.com/hlg212/FCP)
 - [数据权限](https://github.com/hlg212/FCP)
+- [不连接配置中心](https://github.com/hlg212/fcf-examples/local)
 ## License
 
 See the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) file for details.
