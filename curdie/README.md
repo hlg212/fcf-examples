@@ -25,6 +25,10 @@ fcf:
 
 ![image](https://raw.githubusercontent.com/hlg212/fcf-examples/master/images/curdie_serviceImpl.jpg)
 
+![image](https://raw.githubusercontent.com/hlg212/fcf-examples/master/images/curdie_dao.jpg)
+
+![image](https://raw.githubusercontent.com/hlg212/fcf-examples/master/images/curdie_mapper.jpg)
+
 ![image](https://raw.githubusercontent.com/hlg212/fcf-examples/master/images/curdie_export.jpg)
 
 

@@ -17,7 +17,9 @@ spring:
 
 两种方式引用:
 一种是将框架中的配置文件复制到config目录；
+
 另一种是在启动时加载框架中的配置,如：-Dspring.config.additional-location=classpath:/config/common/
+
 然后按照下面的方式进行加载
 ```
 spring:
@@ -35,7 +37,3 @@ spring:
           - common-redis
 ```
 尽量部署一个稳定的配置中心。
-
-## License
-
-See the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) file for details.
