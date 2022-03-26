@@ -1,6 +1,5 @@
-hlg:
+fcf:
   config:
-    ##    uri: ${htcf.config.uri}
     uri: http://localhost:8181/config/svn
 
 # 监控用的应用信息
