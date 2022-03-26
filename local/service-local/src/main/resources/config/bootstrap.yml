@@ -1,0 +1,48 @@
+#fcf:
+#  config:
+#    uri: http://localhost:8181/config/svn
+
+
+# 关闭配置中心
+spring:
+  cloud:
+    config:
+      enabled: false
+### 没有连接到配置中心，将框架配置拷贝到本地；
+#
+#
+---
+# 监控用的应用信息
+info:
+  app:
+    name: ${spring.application.name}
+    description: ${project.description}
+    version: ${project.version}
+    encoding: ${project.build.sourceEncoding}
+    java:
+      version: ${java.version}
+    frame:
+      version: ${fcf.version}
+
+---
+spring:
+  application:
+    name: local
+---
+##  两种方式，
+##  一种是将框架中的配置文件复制到config目录；
+##  另一种是在启动时加载框架中的配置,如：-Dspring.config.additional-location=classpath:/config/common/
+##  然后按照下面的方式进行加载
+spring:
+  profiles:
+    include:
+      - common
+      - common-actuator
+      - common-application
+      - common-db
+      - common-esb
+      - common-log
+      - common-mq
+      - common-oauth
+      - common-rc
+      - common-redis

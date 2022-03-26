@@ -1,0 +1,20 @@
+﻿spring:
+  application:
+    name: local
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
+---
+# 没有安装MQ,所以将mq相关模块关闭
+# 环境不完善时选择
+
+spring:
+  cloud:
+    bus:
+      enabled: false
+fcf:
+  esb:
+    enable: false
+
+---
