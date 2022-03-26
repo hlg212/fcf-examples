@@ -1,0 +1,13 @@
+fcf:
+  application:
+    local:
+      port: 8281
+    curdie:
+      port: 8181
+     
+server:
+  #端口
+  port: ${fcf.application.${spring.application.name}.port:8080}
+  servlet:
+    #上下文
+    contextPath: /${spring.application.name}
