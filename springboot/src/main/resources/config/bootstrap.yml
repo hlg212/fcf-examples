@@ -1,0 +1,16 @@
+fcf:
+  config:
+    uri: http://localhost:8181/config/svn
+
+# 监控用的应用信息
+
+info:
+  app:
+    name: ${spring.application.name}
+    description: ${project.description}
+    version: ${project.version}
+    encoding: ${project.build.sourceEncoding}
+    java:
+      version: ${java.version}
+    frame:
+      version: ${fcf.version}
