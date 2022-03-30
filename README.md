@@ -9,7 +9,7 @@
 建议配置都存储到配置中心，否则后期对于配置的管理会比较麻烦；
 
 ## 模块介绍
-- [零代码、增、删、改、查、导入、导出](https://github.com/hlg212/fcf-examples/curdie)
+- [零代码、增、删、改、查、导入、导出](https://github.com/hlg212/fcf-examples/tree/master/curdie)
 - [零代码、增、删、改、查](https://github.com/hlg212/FCP)
 - [保存编写业务](https://github.com/hlg212/FCP)
 - [自动填充](https://github.com/hlg212/FCP)
@@ -27,7 +27,7 @@
 - [调用链与业务日志](https://github.com/hlg212/FCP)
 - [数据库版本控制](https://github.com/hlg212/FCP)
 - [数据权限](https://github.com/hlg212/FCP)
-- [不连接配置中心](https://github.com/hlg212/fcf-examples/local)
+- [不连接配置中心](https://github.com/hlg212/fcf-examples/tree/master/local)
 ## License
 
 See the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) file for details.
