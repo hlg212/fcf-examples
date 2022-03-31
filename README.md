@@ -8,7 +8,80 @@
 
 建议配置都存储到配置中心，否则后期对于配置的管理会比较麻烦；
 
+## 快速开始
+
+1. 下载运行[配置中心]();
+
+**注意： 也可不运行配置中心，将配置拷贝到服务中;**
+**这里建议启动配置中心， 方便后续的服;**
+```
+git clone https://github.com/hlg212/FCP.git
+```
+##### cmd 
+```
+cd ./FCP
+mvn install 
+cd config 
+mvn install
+cd service-config/target
+java -jar service-config-exec.jar
+```
+
+默认情况下端口为8181
+**请注意，这个只是为了演示，所以配置中心的配置存放在本地**
+**正常的环境会配置svn或者git存储配置**
+
+
+2. 设置配置中心地址
+建议采用host方式;
+##### 配置host
+window: 打开添加 C:\Windows\System32\drivers\etc\hosts 
+```text
+127.0.0.1  fcf.config.com
+```
+
+##### 直接指定
+打开项目配置 curdie\service-curdie\src\main\resources
+```yaml
+fcf:
+  config:
+    uri: http://localhost:8181/config/svn
+```
+或者通过参数传入 
+``
+-Dfcf.config.uri=http://localhost:8181/config/svn
+``
+
+3. 下载运行任何例子,如：[零代码、增、删、改、查、导入、导出](https://github.com/hlg212/fcf-examples/tree/master/curdie)
+
+```
+git clone https://github.com/hlg212/fcf-examples.git
+```
+
+##### cmd
+```
+cd ./fcf-examples
+mvn install 
+cd curdie 
+mvn install
+cd service-curdie/target
+// 
+java -jar service-curdie-exec.jar
+
+//如果没有配置host
+java -jar service-curdie-exec.jar -Dfcf.config.uri=http://localhost:8181/config/svn
+
+```
+
+4. 打开swagger页面
+```
+http://localhost:8080/curdie/swagger-ui.html
+```
+
+[零代码、增、删、改、查、导入、导出]
+
 ## 模块介绍
+- [不连接配置中心](https://github.com/hlg212/fcf-examples/tree/master/local)
 - [零代码、增、删、改、查、导入、导出](https://github.com/hlg212/fcf-examples/tree/master/curdie)
 - [零代码、增、删、改、查](https://github.com/hlg212/FCP)
 - [保存编写业务](https://github.com/hlg212/FCP)
@@ -27,7 +100,9 @@
 - [调用链与业务日志](https://github.com/hlg212/FCP)
 - [数据库版本控制](https://github.com/hlg212/FCP)
 - [数据权限](https://github.com/hlg212/FCP)
-- [不连接配置中心](https://github.com/hlg212/fcf-examples/tree/master/local)
+
+
+
 ## License
 
 See the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) file for details.
