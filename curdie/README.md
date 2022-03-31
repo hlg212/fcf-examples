@@ -4,7 +4,7 @@
 零代码实现一个基础的功能模块
 
 ## 服务如何启动
-首先启动[配置中心]() ,在bootstrap.yml中增加如下配置(可以采用[host]() 方式指定)：
+首先启动[配置中心](https://github.com/hlg212/FCP/tree/master/config) ,在bootstrap.yml中增加如下配置(可以采用host 方式指定)：
 ```yaml
 fcf:
   config:

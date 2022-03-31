@@ -36,4 +36,4 @@ spring:
           - common-rc
           - common-redis
 ```
-尽量部署一个稳定的配置中心。
+**尽量部署一个稳定的配置中心。**

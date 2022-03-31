@@ -10,10 +10,11 @@
 
 ## 快速开始
 
-1. 下载运行[配置中心]();
+### 1. 下载运行[配置中心](https://github.com/hlg212/FCP/tree/master/config);
 
 **注意： 也可不运行配置中心，将配置拷贝到服务中;**
-**这里建议启动配置中心， 方便后续的服;**
+
+**这里建议启动配置中心， 方便后续的服务**
 ```
 git clone https://github.com/hlg212/FCP.git
 ```
@@ -28,11 +29,13 @@ java -jar service-config-exec.jar
 ```
 
 默认情况下端口为8181
+
 **请注意，这个只是为了演示，所以配置中心的配置存放在本地**
+
 **正常的环境会配置svn或者git存储配置**
 
 
-2. 设置配置中心地址
+### 2. 设置配置中心地址
 建议采用host方式;
 ##### 配置host
 window: 打开添加 C:\Windows\System32\drivers\etc\hosts 
@@ -52,7 +55,8 @@ fcf:
 -Dfcf.config.uri=http://localhost:8181/config/svn
 ``
 
-3. 下载运行任何例子,如：[零代码、增、删、改、查、导入、导出](https://github.com/hlg212/fcf-examples/tree/master/curdie)
+### 3. 下载运行任何例子
+如：[零代码、增、删、改、查、导入、导出](https://github.com/hlg212/fcf-examples/tree/master/curdie)
 
 ```
 git clone https://github.com/hlg212/fcf-examples.git
@@ -77,8 +81,6 @@ java -jar service-curdie-exec.jar -Dfcf.config.uri=http://localhost:8181/config/
 ```
 http://localhost:8080/curdie/swagger-ui.html
 ```
-
-[零代码、增、删、改、查、导入、导出]
 
 ## 模块介绍
 - [不连接配置中心](https://github.com/hlg212/fcf-examples/tree/master/local)
