@@ -10,11 +10,11 @@
 
 ## 快速开始
 
-### 1. 下载运行[配置中心](https://github.com/hlg212/FCP/tree/master/config);
+### 1. 下载运行[配置中心](https://github.com/hlg212/FCP/tree/master/config)
 
-**注意： 也可不运行配置中心，将配置拷贝到服务中;**
+*注意： 也可不运行配置中心，将配置拷贝到服务中
 
-**这里建议启动配置中心， 方便后续的服务**
+这里建议启动配置中心， 方便后续的服务
 ```
 git clone https://github.com/hlg212/FCP.git
 ```
@@ -30,9 +30,9 @@ java -jar service-config-exec.jar
 
 默认情况下端口为8181
 
-**请注意，这个只是为了演示，所以配置中心的配置存放在本地**
+*请注意，这个只是为了演示，所以配置中心的配置存放在本地
 
-**正常的环境会配置svn或者git存储配置**
+*正常的环境会配置svn或者git存储配置
 
 
 ### 2. 设置配置中心地址
@@ -115,6 +115,11 @@ http://localhost:8080/curdie/swagger-ui.html
 - [数据权限](https://github.com/hlg212/FCP)
 
 
+## 交流反馈
+* 交流请进群：
+    * QQ： 643083402
+    * 微信：
+* 个人邮箱：xiaolaoban212@qq.com
 
 ## License
 
