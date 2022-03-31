@@ -77,6 +77,17 @@ java -jar service-curdie-exec.jar -Dfcf.config.uri=http://localhost:8181/config/
 
 ```
 
+##### idea 
+open -> fcf-examples
+
+选择 pom.xml 右击 Add as Maven Project
+
+选择 curdie/pom.xml 右击 Add as Maven Project
+
+运行 service-curdie Application
+
+![image](https://raw.githubusercontent.com/hlg212/fcf-examples/master/images/run_application.png)
+
 4. 打开swagger页面
 ```
 http://localhost:8080/curdie/swagger-ui.html
