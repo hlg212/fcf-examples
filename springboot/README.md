@@ -27,6 +27,14 @@
     </dependencies>
 </dependencyManagement>
 ```
+## Application
+将启动类上的注解由`@SpringBootApplication` 替换成 `@CloudApplication`
+
+如：
+```java
+@CloudApplication
+public class Application {
+```
 
 ## 代码复制
 将 [curdie](https://github.com/hlg212/fcf-examples/tree/master/curdie)  代码复制到本工程，然后启动;

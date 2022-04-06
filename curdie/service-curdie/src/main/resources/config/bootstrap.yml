@@ -1,6 +1,6 @@
 fcf:
   config:
-    uri: http://localhost:8181/config/svn
+    uri: http://localhost:8181/config/repo
 
 # 监控用的应用信息
 
@@ -13,4 +13,35 @@ info:
     java:
       version: ${java.version}
     frame:
-      version: ${htcf-frame.version}
+      version: ${fcf.version}
+
+
+
+# 关闭配置中心
+spring:
+  cloud:
+    config:
+      enabled: false
+### 没有连接到配置中心，将框架配置拷贝到本地；
+#
+#
+---
+spring:
+  application:
+    name: curdie
+---
+
+#---
+#spring:
+#  profiles:
+#    include:
+#      - common
+#      - common-actuator
+#      - common-application
+#      - common-db
+#      - common-esb
+#      - common-log
+#      - common-mq
+#      - common-oauth
+#      - common-rc
+#      - common-redis
