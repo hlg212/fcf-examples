@@ -1,6 +1,6 @@
 #fcf:
 #  config:
-#    uri: http://localhost:8181/config/svn
+#    uri: http://localhost:8181/config/repo
 
 
 # 关闭配置中心
